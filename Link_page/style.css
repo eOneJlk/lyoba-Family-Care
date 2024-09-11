@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-padding {
+    position: relative;
+    height: 100vh;
+}
+
+.section-bg {
+    background-image: url("https://www.ebony.com/wp-content/uploads/2016/07/Black_Mens_Health_Checkup_original_33114.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 59%;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+.section-bg:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #32D6BE;
+    opacity: 0.9;
+}
+
+.contact-form {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    margin-bottom: 17px;
+    color: #333;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.contact-form input[type="submit"] {
+    width: auto;
+    padding: 15px 30px;
+    color: #32D6BE;
+    background: white;
+    font-weight: bold;
+}
+
+.appointment-text {
+    padding-left: 100px;
+    padding-top: 140px;
+}
+
+ul li i {
+    padding-right: 10px;
+    color: #32D6BE;
+}
+
+.boxed-btn {
+    padding: 10px 30px;
+    background: #32D6BE;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.boxed-btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+h2.absolute-text {
+    color: white;
+    position: absolute;
+    top: 29%;
+    left: -60px;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    letter-spacing: 2px;
+
+}
+
+ul {
+    margin: 40px 0;
+}
+
+ul li {
+    margin: 15px 0px;
+}
+
+@media screen and (max-width: 767px) {
+    .section-bg {
+        width: 100%;
+    }
+
+    .appointment-text {
+        padding-left: 0px;
+        padding-top: 140px;
+    }
+
+    h2.absolute-text {
+        color: white;
+        position: absolute;
+        top: 32px;
+        left: 24px;
+        writing-mode: inherit;
+        transform: none;
+        letter-spacing: 2px;
+    }
+
+}
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    h2.absolute-text {
+        color: white;
+        position: absolute;
+        top: 32px;
+        left: 24px;
+        writing-mode: inherit;
+        transform: none;
+        letter-spacing: 2px;
+    }
+    .appointment-text {
+        padding-left: 20px;
+        padding-top: 140px;
+    }
+
+}
